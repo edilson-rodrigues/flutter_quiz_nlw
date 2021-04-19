@@ -1,24 +1,18 @@
+import 'package:dev_quiz/core/core.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('NLW5 Flutter'),
-      ),
-      body: Center(
-        child: Text(
-          'Olá, Edilson DEV',
-          style: TextStyle(
-            fontSize: 30,
-          ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: AppGradients.linear,
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(
-          Icons.add,
+        child: Center(
+          child: Image.asset(
+            AppImages.logo,
+          ),
         ),
       ),
     );
