@@ -1,16 +1,18 @@
 # flutter_quiz_nlw
 
-A new Flutter project.
+We're go for launch. É hora de decolar e partir rumo ao próximo nível. Esse é o começo da nossa missão.
 
-## Getting Started
+## First day #NLW 5 - Flutter Quiz
 
-This project is a starting point for a Flutter application.
+> requirements to run the project::
 
-A few resources to get you started if this is your first Flutter project:
+- flutter: 2.0+ with null safety applied.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+> steps
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- run flutter pub get no terminal
+- flutter run in terminal
+
+[sobre a NLW5](https://nextlevelweek.com/inscricao/5)
+
+<img src="./screenshots/day_01.png" width="350" height="650">
