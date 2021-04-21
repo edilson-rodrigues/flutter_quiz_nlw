@@ -5,15 +5,16 @@ import 'package:flutter/material.dart';
 class ChartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      height: 80,
-      width: 80,
+      height: size.height * 0.1,
+      width: size.width * 0.1,
       child: Stack(
         children: [
           Center(
             child: Container(
-              height: 80,
-              width: 80,
+              height: size.height * 0.09,
+              width: size.width * 0.2,
               child: CircularProgressIndicator(
                 strokeWidth: 10,
                 value: .75,
