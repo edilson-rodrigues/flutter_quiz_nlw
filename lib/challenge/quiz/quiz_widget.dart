@@ -7,12 +7,12 @@ import 'package:dev_quiz/shared/models/question_model.dart';
 
 class QuizWidget extends StatefulWidget {
   final QuestionModel question;
-  final VoidCallback onChange;
+  final ValueChanged<bool> onSelected;
 
   const QuizWidget({
     Key? key,
     required this.question,
-    required this.onChange,
+    required this.onSelected,
   }) : super(key: key);
 
   @override
@@ -43,7 +43,7 @@ class _QuizWidgetState extends State<QuizWidget> {
             awnser: awnser(i),
             disabled: indexSelected != -1,
             isSelected: indexSelected == i,
-            onTap: () {
+            onTap: (awnser) {
               indexSelected = i;
 
               setState(() {});
@@ -51,7 +51,7 @@ class _QuizWidgetState extends State<QuizWidget> {
                 Duration(
                   milliseconds: 750,
                 ),
-              ).then((value) => widget.onChange());
+              ).then((_) => widget.onSelected(awnser));
             },
           ),
       ],
