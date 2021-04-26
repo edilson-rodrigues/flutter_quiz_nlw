@@ -1,3 +1,4 @@
+import 'package:dev_quiz/missed/missed_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dev_quiz/challenge/challenge_controller.dart';
@@ -116,11 +117,15 @@ class _ChallengePageState extends State<ChallengePage> {
                       onTap: () => Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ResultPage(
-                            title: widget.title,
-                            length: widget.questions.length,
-                            result: controller.awnserHits,
-                          ),
+                          builder: (context) => controller.awnserHits > 0
+                              ? ResultPage(
+                                  title: widget.title,
+                                  length: widget.questions.length,
+                                  result: controller.awnserHits,
+                                )
+                              : MissedPage(
+                                  title: widget.title,
+                                ),
                         ),
                       ),
                     ),

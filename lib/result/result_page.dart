@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:dev_quiz/challenge/next_button/next_button_widget.dart';
 import 'package:dev_quiz/core/app_images.dart';
 import 'package:dev_quiz/core/app_text_styles.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ResultPage extends StatelessWidget {
   final String title;
@@ -70,7 +71,11 @@ class ResultPage extends StatelessWidget {
                       Expanded(
                         child: NextButtonWidget.purple(
                           label: 'Compartilar',
-                          onTap: () {},
+                          onTap: () {
+                            Share.share(
+                              'DevQuiz\n$title\nResultado do quiz\n$result acertos de $length questões.',
+                            );
+                          },
                         ),
                       ),
                     ],
