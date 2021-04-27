@@ -1,37 +1,66 @@
-# flutter_quiz_nlw
+<h1 align="center">
+   NLW 5 - Flutter Quiz
+</h1>
 
+<h2>
 We're go for launch. É hora de decolar e partir rumo ao próximo nível. Esse é o começo da nossa missão.
+</h2>
+<br/>
 
-## First day #NLW 5 - Flutter Quiz
+# Indice
 
-> requirements to run the project::
+- [Sobre](#-sobre)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
 
-- flutter: 2.0+ with null safety applied.
+## 🔖&nbsp; Sobre
 
-> steps
+Esse projeto foi desenvolvido como parte do maior evento de todos os tempos, a **NLW#5**, com o tema **QuizDev**.
 
-- run flutter pub get no terminal
-- flutter run in terminal
+---
 
-[sobre a NLW5](https://nextlevelweek.com/inscricao/5)
+## 🚀 Tecnologias utilizadas
 
-<img src="./screenshots/first_01.png" width="350" height="650">
+O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-## Second day #NLW 5 - Flutter Quiz
+- [Dart](https://dart.dev/)
+- [Flutter](https://flutter.dev/)
 
-We ended the home UI with statistical data.
-At that moment I faced a problem with overflow in the QuizCard widget, the resolution was to use mediaquery. It was very good on my physical device and on my emulator.
+  **packages**
 
-<img src="./screenshots/second_01.png" width="350" height="650">
+- [Google Fonts](https://pub.dev/packages/google_fonts)
+- [Share Plus](https://pub.dev/packages/share_plus)
 
-We also created the dynamic questions screen, receiving the appropriate values, signaling the correct, wrong and standard questions.
+---
 
-<img src="./screenshots/second_02.png" width="350" height="650">
+## Como baixar o projeto
 
-## Third day #NLW 5 - Flutter Quiz
+```bash
 
-Today we leave our Home Page receiving dynamic data from our database, in json format, we work with repositories and controllers, ready to receive data from a server.
-We create models for the scenario of our application.
+    # Clonar o repositório
+    $ git clone https://github.com/edilson-rodrigues/flutter_quiz_nlw.git
 
-<img src="./screenshots/third_01.png" width="350" height="650">
-<img src="./screenshots/third_02.png" width="350" height="650">
+    # Entrar no diretório
+    $ cd flutter_quiz_nlw
+
+    # Instalar as dependências
+    $ flutter pub get
+
+    # Iniciar o projeto
+    $ select a device to use
+    $ f5 vscode | run > start debug
+```
+
+---
+
+## Screens
+
+<img src="./screenshots/home.jpeg" width="300" height="600">
+<img src="./screenshots/parabens.jpeg" width="300" height="600">
+<img src="./screenshots/errou.jpeg" width="300" height="600">
+<img src="./screenshots/error.jpeg" width="300" height="600">
+<img src="./screenshots/acerto.jpeg" width="300" height="600">
+
+---
+
+<a>Desenvolvido por Edilson Rodrigues</a>
