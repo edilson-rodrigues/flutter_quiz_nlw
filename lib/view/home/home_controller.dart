@@ -1,8 +1,9 @@
-import 'package:dev_quiz/home/home_repository.dart';
-import 'package:dev_quiz/home/home_state.dart';
 import 'package:dev_quiz/shared/models/quiz_model.dart';
 import 'package:dev_quiz/shared/models/user_model.dart';
+import 'package:dev_quiz/view/home/home_state.dart';
 import 'package:flutter/foundation.dart';
+
+import 'home_repository.dart';
 
 class HomeController {
   final stateNotifier = ValueNotifier<HomeState>(HomeState.empty);

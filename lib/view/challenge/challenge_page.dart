@@ -1,14 +1,14 @@
-import 'package:dev_quiz/missed/missed_page.dart';
+import 'package:dev_quiz/view/challenge/quiz/quiz_widget.dart';
+import 'package:dev_quiz/view/missed/missed_page.dart';
+import 'package:dev_quiz/view/result/result_page.dart';
 import 'package:flutter/material.dart';
-
-import 'package:dev_quiz/challenge/challenge_controller.dart';
-import 'package:dev_quiz/challenge/question_indicator/question_indicator_widget.dart';
-import 'package:dev_quiz/challenge/quiz/quiz_widget.dart';
 import 'package:dev_quiz/core/app_colors.dart';
-import 'package:dev_quiz/result/result_page.dart';
+
 import 'package:dev_quiz/shared/models/question_model.dart';
 
+import 'challenge_controller.dart';
 import 'next_button/next_button_widget.dart';
+import 'question_indicator/question_indicator_widget.dart';
 
 class ChallengePage extends StatefulWidget {
   final List<QuestionModel> questions;

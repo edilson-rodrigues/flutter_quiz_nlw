@@ -1,6 +1,5 @@
+import 'package:dev_quiz/view/challenge/next_button/next_button_widget.dart';
 import 'package:flutter/material.dart';
-
-import 'package:dev_quiz/challenge/next_button/next_button_widget.dart';
 import 'package:dev_quiz/core/app_images.dart';
 import 'package:dev_quiz/core/app_text_styles.dart';
 import 'package:share_plus/share_plus.dart';
